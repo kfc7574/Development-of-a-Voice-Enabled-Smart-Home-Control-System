@@ -30,6 +30,46 @@ In this project, I was responsible for the following areas:
 - **Facial recognition**: I used OpenCV to capture the camera feed and integrated a pre-trained model to recognize and authenticate users based on facial features, enhancing the system's security and ensuring a seamless login experience.
 > (Note: Hardware integration and control with devices like the Raspberry Pi were not part of my contributions.)
 
+## Face Recognition Versions
+
+This project includes **two versions** of the face recognition module, designed for different usage scenarios:
+
+- `opencv_realtime.py`  
+  → A **production-oriented version**, used by the backend server.  
+  It supports **face login through the app** and integrates with Flask and database logic for user authentication.
+
+- `opencv_realtime_full_version.py`  
+  → A **real-time webcam-based** face recognition script, primarily used during development for **testing and model training**.  
+  It helps verify that the system correctly captures and recognizes a face before integration into the app.
+
+In addition, the full version (`opencv_realtime_full_version.py`) supports **adding new faces** to the dataset.  
+Users can input a name and capture a series of face images, which are then saved and used to retrain the recognition model.  
+This allows the system to **dynamically expand the list of recognizable users**, improving real-world usability and flexibility.
+
+Both versions use the same deep learning-based face embedding model (OpenFace), but are adapted to different stages of the system workflow.
+
+## Tech Stack
+
+| Layer        | Tech Used                     |
+|--------------|-------------------------------|
+| 📱 Frontend  | Android (Java)                |
+| 🧠 Backend   | Python + Flask                |
+| 🧬 AI/ML     | OpenCV + DNN Face Recognizer  |
+| 🗄️ Database  | MySQL                         |
+| 🌐 Realtime  | Flask-SocketIO, Flask-CORS    |
+| 🔐 Config    | Python-dotenv (.env)          |
+
+## ⚙️ Environment Variables
+
+Please create a `.env` file in the root directory and fill in your own MySQL credentials:
+
+```env
+MYSQL_USER=your_mysql_user
+MYSQL_PASSWORD=your_mysql_password
+MYSQL_DB=your_database_name
+MYSQL_HOST=localhost
+```
+
 ## Demo Screenshots
 <div style="display: flex; justify-content: center;">
   <img src="docs/images/home_screen.png" width="150" height="300" style="margin-right: 20px;">
