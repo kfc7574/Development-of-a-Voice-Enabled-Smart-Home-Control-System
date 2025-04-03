@@ -52,7 +52,7 @@ Both versions use the same deep learning-based face embedding model (OpenFace), 
 
 | Layer        | Tech Used                     |
 |--------------|-------------------------------|
-| 📱 Frontend  | Android (Java)                |
+| 📱 Frontend  | Android (Kotlin)                |
 | 🧠 Backend   | Python + Flask                |
 | 🧬 AI/ML     | OpenCV + DNN Face Recognizer  |
 | 🗄️ Database  | MySQL                         |
