@@ -41,9 +41,9 @@ env/
 .venv/
 
 # ignore images
-backend/face/dataset/caltech_faces/**/*.jpg
-backend/face/dataset/caltech_faces/**/*.jpeg
-backend/face/dataset/caltech_faces/**/*.png
+backend/face/face_dataset/caltech_faces/**/*.jpg
+backend/face/face_dataset/caltech_faces/**/*.jpeg
+backend/face/face_dataset/caltech_faces/**/*.png
 
 # ignore MYSQL
 .env
