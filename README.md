@@ -1,4 +1,7 @@
 # Development-of-a-Voice-Enabled-Smart-Home-Control-System
+>🎓 This project was completed as my undergraduate thesis and was one of the key works submitted for my successful admission to a master’s program in South Korea. 
+
+>🚫  Unauthorized copying or reproduction is strictly prohibited. This repository is for reference only.
 # Project Overview
 
 This project is my **graduation thesis**, aimed at developing a **voice-interactive smart home appliance control system**. The system simulates the control of home appliances such as fans, lights, and air conditioners through **voice commands**. It supports **real-time voice recognition** and control, and can be **remotely managed** via a mobile application.
